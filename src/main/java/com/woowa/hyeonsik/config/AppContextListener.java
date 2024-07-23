@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
 @WebListener
 public class AppContextListener implements ServletContextListener {
     private static final Logger logger = LoggerFactory.getLogger(AppContextListener.class);
-
+    //
     @Override
     public void contextInitialized(ServletContextEvent sce) {
         logger.debug("Context 초기화를 진행합니다.");
