@@ -1,0 +1,19 @@
+
+p
+java:S2699"-Add at least one assertion to this test case.(÷¥­´8öšÏÄ2J$9357e7b6-b80b-4347-af92-b5768f98868d
+u
+java:S2699&"-Add at least one assertion to this test case.(×Ï·£şÿÿÿÿ8÷šÏÄ2J$257558e6-207b-4868-ba11-0c172e833345
+Å
+java:S3577"‚Rename class "zzz" to match the regular expression: '^((Test|IT)[a-zA-Z0-9_]+|[A-Z][a-zA-Z0-9_]*(Test|Tests|TestCase|IT|ITCase))$'(“–°8Šî€À2J$31b94682-6b55-4b78-b889-797dcc0f0635
+`
+java:S5786"Remove this 'public' modifier.(“–°8Šî€À2J$246b3701-dc52-41a2-a296-0bf228312630
+¡
+java:S1607"^Either add an explanation about why this test is skipped or remove the "@Disabled" annotation.(÷¥­´8Ü¶ßÁ2J$4c2105a1-8311-48cb-bb07-c847d7c6ca33
+¼
+java:S1130"yRemove the declaration of thrown exception 'java.lang.InstantiationException', as it cannot be thrown from method's body.(÷¥­´8øšÏÄ2J$9c17c29f-76d1-44c3-891a-a62f51f4734a
+¼
+java:S1130"yRemove the declaration of thrown exception 'java.lang.IllegalAccessException', as it cannot be thrown from method's body.(÷¥­´8øšÏÄ2J$3a8b8751-685e-4d0f-acac-fd5f96c65a70
+¦
+java:S1607&"^Either add an explanation about why this test is skipped or remove the "@Disabled" annotation.(×Ï·£şÿÿÿÿ8¾ßÁ2J$090c3d3c-3335-420c-8bfa-260b50124cbd
+g
+java:S29256"$Remove this use of "Thread.sleep()".(¬Æ„°8İ¶ßÁ2J$febb1691-3191-4edd-8c56-82e0701d7eb6
