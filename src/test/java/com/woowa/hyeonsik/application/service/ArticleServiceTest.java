@@ -1,7 +1,10 @@
 package com.woowa.hyeonsik.application.service;
 
 import com.woowa.hyeonsik.application.dao.InMemoryArticleDao;
+import com.woowa.hyeonsik.application.dao.JdbcArticleDao;
 import com.woowa.hyeonsik.application.domain.Article;
+import com.woowa.hyeonsik.server.database.DatabaseConnector;
+import com.woowa.hyeonsik.server.database.property.MysqlProperty;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -15,9 +18,10 @@ class ArticleServiceTest {
 
     @BeforeEach
     void setUp() {
-        InMemoryArticleDao articleDao = new InMemoryArticleDao();
+//        InMemoryArticleDao articleDao = new InMemoryArticleDao();
+        JdbcArticleDao articleDao = new JdbcArticleDao(new DatabaseConnector(new MysqlProperty()));
         articleService = new ArticleService(articleDao);
-        articleDao.clear();
+//        articleDao.clear();
     }
 
     @Test

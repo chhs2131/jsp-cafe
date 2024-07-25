@@ -4,10 +4,13 @@ import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 import com.woowa.hyeonsik.application.dao.InMemoryUserDao;
+import com.woowa.hyeonsik.application.dao.JdbcUserDao;
 import com.woowa.hyeonsik.application.domain.User;
 import java.util.List;
 import java.util.stream.Stream;
 
+import com.woowa.hyeonsik.server.database.DatabaseConnector;
+import com.woowa.hyeonsik.server.database.property.MysqlProperty;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -17,13 +20,14 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 class UserServiceTest {
     private UserService userService;
-    private InMemoryUserDao userDao;
+    private JdbcUserDao userDao;
 
     @BeforeEach
     void setUp() {
-        userDao = new InMemoryUserDao();
+//        userDao = new InMemoryUserDao();
+        userDao = new JdbcUserDao(new DatabaseConnector(new MysqlProperty()));
         userService = new UserService(userDao);
-        userDao.clear();
+//        userDao.clear();
     }
 
     @Test

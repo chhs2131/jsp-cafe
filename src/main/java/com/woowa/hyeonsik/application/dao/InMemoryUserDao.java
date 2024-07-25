@@ -17,6 +17,11 @@ public class InMemoryUserDao implements UserDao {
         users.add(user);
     }
 
+    @Override
+    public void update(User user) {
+        throw new UnsupportedOperationException();
+    }
+
     public void removeByUserId(String userId) {
         Optional<User> first = users.stream()
                 .filter(user -> user.getUserId().equals(userId))
